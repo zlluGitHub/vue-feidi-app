@@ -5,6 +5,9 @@
     <!-- <Main/> -->
     <NavBottom/>
     <OrderMain/>
+    <Details/>
+    <Following/>
+    <HotNews/>
   </div>
 </template>
 
@@ -13,6 +16,9 @@ import HeadeBlack from "./components/HeadeBlack.vue";
 import IndexContent from "./components/IndexContent.vue";
 import NavBottom from "./components/NavBottom.vue";
 import OrderMain from "./components/OrderMain.vue";
+import Details from "./components/Details.vue";
+import Following from "./components/Following.vue";
+import HotNews from "./components/HotNews.vue";
 
 export default {
   name: "app",
@@ -20,7 +26,10 @@ export default {
     HeadeBlack,
     IndexContent,
     NavBottom,
-    OrderMain
+    OrderMain,
+    Details,
+    Following,
+    HotNews
   }
 };
 </script>
