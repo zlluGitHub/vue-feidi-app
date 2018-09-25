@@ -1,22 +1,21 @@
 <template>
 <div>
-    <HeadeBlack/>
+    <HeadeBlack :title="'订单中心'"/>
     <OrderNav/>
-    <OrderList/>
-    <NavBottom/>
+    <router-view></router-view>
+    <!-- <OrderList/> -->
 </div>
 </template>
 <script>
 import OrderNav from "./OrderNav";
 import HeadeBlack from "./HeadeBlack";
-import OrderList from "./OrderList";
-import NavBottom from "./NavBottom";
+// import OrderList from "./OrderList";
 export default {
+  name: "order",
   components: {
-    HeadeBlack,
     OrderNav,
-    OrderList,
-    NavBottom
+    HeadeBlack
+    // OrderList
   }
 };
 </script>

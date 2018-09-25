@@ -50,6 +50,8 @@
   }
   > ul {
     padding: 20px;
+    padding-top: 0px;
+    margin-top: 20px;
     font-size: 24px;
     background-color: #fff;
     li {

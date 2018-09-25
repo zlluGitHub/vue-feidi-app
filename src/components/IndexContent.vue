@@ -1,6 +1,8 @@
 <template>
+<div>
+    <HeadeBlack :title="'个人中心'"/>
     <div class="center">
-      <img src="../../images/index_06.gif" alt="">
+      <img src="../../images/index_06.gif" alt="图片">
       <NavTop/>
       <div class="product">
         <h2>我的产品</h2>
@@ -47,14 +49,16 @@
         <div class="more">查看更多</div>
       </div>
     </div>
+    </div>
 </template>
 <script>
+import HeadeBlack from "./HeadeBlack";
 import NavTop from "./NavTop";
-
 export default {
   name: "navtop",
   components: {
-    NavTop
+    NavTop,
+    HeadeBlack
   }
 };
 </script>

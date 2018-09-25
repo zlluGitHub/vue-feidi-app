@@ -1,11 +1,11 @@
 <template>
         <nav>
             <ul>
-                <li>全部</li>
-                <li>代付款</li>
-                <li>待发货</li>
-                <li>代收货</li>
-                <li>已完成</li>
+                <li class="active"><router-link to="/all" title="全部">全部</router-link></li>
+                <li><router-link to="/pay" title="代付款">代付款</router-link></li>
+                <li><router-link to="/delivery" title="待发货">待发货</router-link></li>
+                <li><router-link to="/take" title="代收货">代收货</router-link></li>
+                <li><router-link to="/finish" title="已完成">已完成</router-link></li>
             </ul>
         </nav>
 </template>
@@ -18,11 +18,18 @@ nav {
     font-size: 24px;
     color: #000;
     li {
-      padding: 26px 12px;
+      border-bottom: 1px solid #fff;
+      padding: 26px 8px;
+      a {
+        color: #666;
+        font-size: 24px;
+      }
     }
     li.active {
-      color: aqua;
-      border-bottom: 1px solid aqua;
+      border-bottom: 1px solid #35d4a0;
+      a {
+        color: #35d4a0;
+      }
     }
   }
 }

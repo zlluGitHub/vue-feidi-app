@@ -3,19 +3,22 @@
         <ul>
           <li>
             <img src="../../images/index_09.gif" alt="独家代理"> 
-            <span>独家代理</span>
+            <router-link to="/agent" title="独家代理">独家代理</router-link> 
+            
           </li>
           <li>
             <img src="../../images/index_11.gif" alt="肺笛简介"> 
-            <span>肺笛简介</span>
+            <router-link to="/synopsis" title="肺笛简介">肺笛简介</router-link> 
+            
           </li>
           <li>
-            <img src="../../images/index_14.gif" alt="招商引资"> 
-            <span>招商引资</span>
+            <img src="../../images/index_14.gif" alt="招商引资">
+            <router-link to="/business" title="招商引资">招商引资</router-link> 
+            
           </li>
           <li>
             <img src="../../images/index_17.gif" alt="我的订单"> 
-            <span>我的订单</span>
+             <router-link to="/order" title="我的订单">我的订单</router-link>
           </li>
         </ul>
       </nav>
@@ -36,7 +39,7 @@ nav ul {
       height: 52px;
       padding-bottom: 8px;
     }
-    span {
+    a {
       font-size: 20px;
     }
   }

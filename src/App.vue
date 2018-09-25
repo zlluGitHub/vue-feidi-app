@@ -1,43 +1,15 @@
 <template>
   <div id="app">
-    <HeadeBlack/>
-    <IndexContent/>
-    <!-- <Main/> -->
-    <NavBottom/>
-    <OrderMain/>
-    <Details/>
-    <Following/>
-    <HotNews/>
+    <Main/>
   </div>
 </template>
 
 <script>
-import HeadeBlack from "./components/HeadeBlack.vue";
-import IndexContent from "./components/IndexContent.vue";
-import NavBottom from "./components/NavBottom.vue";
-import OrderMain from "./components/OrderMain.vue";
-import Details from "./components/Details.vue";
-import Following from "./components/Following.vue";
-import HotNews from "./components/HotNews.vue";
-
+import Main from "./components/Main";
 export default {
   name: "app",
   components: {
-    HeadeBlack,
-    IndexContent,
-    NavBottom,
-    OrderMain,
-    Details,
-    Following,
-    HotNews
+    Main
   }
 };
 </script>
-
-<style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-</style>

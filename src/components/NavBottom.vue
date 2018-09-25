@@ -2,20 +2,28 @@
     <nav>
         <ul>
           <li>
-            <img src="../../images/index_39.gif" alt="首页"> 
-            <span>首页</span>
+            <router-link to="/">
+              <img src="../../images/index_39.gif" alt="首页"> 
+              <span>首页</span>
+            </router-link>
           </li>
-          <li>
+          <li> 
+            <router-link to="/order">
             <img src="../../images/index_31.gif" alt="个人中心"> 
             <span>个人中心</span>
+           </router-link>
           </li>
           <li>
-            <img src="../../images/index_34.gif" alt="肺笛"> 
-            <span>肺笛</span>
+            <router-link to="/order">
+              <img src="../../images/index_34.gif" alt="肺笛"> 
+              <span>肺笛</span> 
+            </router-link>
           </li>
           <li>
-            <img src="../../images/index_36.jpg" alt="关于我们"> 
-            <span>关于我们</span>
+            <router-link to="/order">
+              <img src="../../images/index_36.jpg" alt="关于我们"> 
+              <span>关于我们</span>
+            </router-link>
           </li>
         </ul>
       </nav>
@@ -32,13 +40,18 @@ nav ul {
     align-items: center;
     padding-bottom: 18px;
     padding-top: 20px;
-    img {
-      width: 45px;
-      height: 55px;
-      padding-bottom: 8px;
-    }
-    span {
-      font-size: 20px;
+
+    a {
+      color: #666;
+      font-size: 22px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 45px;
+        height: 55px;
+        padding-bottom: 8px;
+      }
     }
   }
 }
