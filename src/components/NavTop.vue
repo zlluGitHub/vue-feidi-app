@@ -25,7 +25,7 @@
 </template>
 <style lang="scss" scoped>
 nav ul {
-  margin: 0px;
+  margin: 0rem;
   background: #fff;
   display: flex;
   justify-content: space-around;
@@ -33,14 +33,15 @@ nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 18px;
+    padding-bottom: 0.18rem;
     img {
-      width: 45px;
-      height: 52px;
-      padding-bottom: 8px;
+      width: 0.45rem;
+      height: 0.52rem;
+      padding-bottom: 0.08rem;
     }
     a {
-      font-size: 20px;
+      color: #666;
+      font-size: 0.2rem;
     }
   }
 }

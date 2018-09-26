@@ -22,3 +22,12 @@ img{
 p{
     margin: 0px;
 }
+::-webkit-input-placeholder {
+    color: #e6e6e6;
+  }
+  ::-moz-input-placeholder {
+    color: #e6e6e6;
+  }
+  ::-ms-input-placeholder {
+    color: #e6e6e6;
+  }

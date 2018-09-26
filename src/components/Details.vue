@@ -75,27 +75,27 @@
 .details {
   > div {
     background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 0.2rem;
+    margin-bottom: 0.2rem;
     p.p1 {
-      font-size: 25px;
+      font-size: 0.25rem;
       font-weight: 600;
-      padding: 20px 0;
+      padding: 0.2rem 0;
       span {
-        margin-right: 40px;
+        margin-right: 0.4rem;
       }
     }
     p.p2 {
       position: relative;
-      font-size: 24px;
+      font-size: 0.24rem;
       line-height: 1.5;
-      padding-left: 30px;
+      padding-left: 0.3rem;
       span {
-        margin-right: 12px;
+        margin-right: 0.12rem;
       }
       img {
-        width: 20px;
-        height: 25px;
+        width: 0.2rem;
+        height: 0.25rem;
         top: 0;
         left: 0;
         position: absolute;
@@ -105,89 +105,89 @@
   ul {
     li {
       background-color: #fff;
-      padding: 20px;
+      padding: 0.2rem;
       color: #666;
-      font-size: 24px;
-      margin-bottom: 20px;
+      font-size: 0.24rem;
+      margin-bottom: 0.2rem;
       div:nth-child(1) {
         display: flex;
         img {
-          width: 150px;
-          margin-right: 26px;
-          border: 1px solid #f5f5f5;
+          width: 1.5rem;
+          margin-right: 0.26rem;
+          border: 0.01rem solid #f5f5f5;
         }
         > div {
           display: flex;
           flex-direction: column;
           p:nth-child(2) {
-            margin-top: 12px;
-            margin-bottom: 30px;
+            margin-top: 0.12rem;
+            margin-bottom: 0.3rem;
             color: #b3b3b3;
           }
           span {
-            font-size: 26px;
+            font-size: 0.26rem;
           }
         }
       }
       div:nth-child(2) {
         display: flex;
-        margin-top: 12px;
+        margin-top: 0.12rem;
         > p:nth-child(1) {
-          margin-right: 52px;
+          margin-right: 0.52rem;
           span:nth-child(1) {
-            margin-right: 6px;
+            margin-right: 0.06rem;
             color: red;
           }
         }
         > p:nth-child(2) {
           span {
-            margin-left: 6px;
+            margin-left: 0.06rem;
           }
         }
       }
     }
   }
   .order-details {
-    margin-top: 20px;
+    margin-top: 0.2rem;
     background-color: #fff;
-    font-size: 24px;
+    font-size: 0.24rem;
     > p {
-      padding: 6px 0px;
+      padding: 0.06rem 0rem;
       span {
-        margin-left: 12px;
+        margin-left: 0.12rem;
       }
     }
     p:nth-child(2) {
-      padding-bottom: 10px;
-      border-bottom: 1px solid #f5f5f5;
+      padding-bottom: 0.1rem;
+      border-bottom: 0.01rem solid #f5f5f5;
     }
     p:nth-child(3),
     p:nth-child(4) {
-      padding: 25px 0px;
-      margin: 5px 0px;
-      border-bottom: 1px solid #f5f5f5;
+      padding: 0.25rem 0rem;
+      margin: 0.05rem 0rem;
+      border-bottom: 0.01rem solid #f5f5f5;
     }
   }
   .doogs-all {
     background-color: #fff;
-    font-size: 24px;
+    font-size: 0.24rem;
     p {
-      padding: 6px 0px;
+      padding: 0.06rem 0rem;
       span {
-        margin-left: 12px;
+        margin-left: 0.12rem;
       }
     }
     p:nth-child(3) {
-      padding: 20px 0px;
-      margin: 5px 0px;
-      border-top: 1px solid #f5f5f5;
-      border-bottom: 1px solid #f5f5f5;
+      padding: 0.2rem 0rem;
+      margin: 0.05rem 0rem;
+      border-top: 0.01rem solid #f5f5f5;
+      border-bottom: 0.01rem solid #f5f5f5;
     }
     p:nth-child(4) {
       display: flex;
       justify-content: flex-end;
-      margin-top: 20px;
-      font-size: 28px;
+      margin-top: 0.2rem;
+      font-size: 0.28rem;
       span {
         color: #fc9c20;
       }

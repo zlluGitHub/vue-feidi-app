@@ -1,16 +1,16 @@
 <template>
     <div>
-         <HeadeBlack :title="'订单跟踪'"/>
-         <Follow/>
+         <HeadeBlack :title="'个人资料'"/>
+         <Datum/>
     </div>
 </template>
 <script>
-import Follow from "./Follow";
+import Datum from "./Datum";
 import HeadeBlack from "./HeadeBlack";
 export default {
-  name: "follow",
+  name: "datum",
   components: {
-    Follow,
+    Datum,
     HeadeBlack
   }
 };

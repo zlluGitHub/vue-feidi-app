@@ -15,18 +15,18 @@ nav {
   ul {
     display: flex;
     justify-content: space-around;
-    font-size: 24px;
+    font-size: 0.24rem;
     color: #000;
     li {
-      border-bottom: 1px solid #fff;
-      padding: 26px 8px;
+      border-bottom: 0.01rem solid #fff;
+      padding: 0.26rem 0.08rem;
       a {
         color: #666;
-        font-size: 24px;
+        font-size: 0.24rem;
       }
     }
     li.active {
-      border-bottom: 1px solid #35d4a0;
+      border-bottom: 0.01rem solid #35d4a0;
       a {
         color: #35d4a0;
       }

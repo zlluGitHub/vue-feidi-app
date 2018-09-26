@@ -30,7 +30,7 @@
 </template>
 <style lang="scss" scoped>
 nav ul {
-  margin: 0px;
+  margin: 0rem;
   background: #fff;
   display: flex;
   justify-content: space-around;
@@ -38,19 +38,19 @@ nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 18px;
-    padding-top: 20px;
+    padding-bottom: 0.18rem;
+    padding-top: 0.2rem;
 
     a {
       color: #666;
-      font-size: 22px;
+      font-size: 0.22rem;
       display: flex;
       flex-direction: column;
       align-items: center;
       img {
-        width: 45px;
-        height: 55px;
-        padding-bottom: 8px;
+        width: 0.45rem;
+        height: 0.55rem;
+        padding-bottom: 0.08rem;
       }
     }
   }

@@ -23,26 +23,35 @@
                 <p><span>2017-12-23 09：23</span><span>查看更多</span> </p>
             </li>
         </ul>
+        <div class="more">查看更多</div>
     </div>
 </template>
 <style lang="scss" scoped>
 .hotNews {
   background-color: #fff;
+  .more {
+    display: block;
+    color: #666;
+    font-size: 0.24rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    background: #f5f5f5;
+  }
   ul {
-    padding: 20px;
-    padding-top: 0px;
+    padding: 0.2rem;
+    padding-top: 0rem;
     li {
-      padding: 28px 0px;
-      border-bottom: 1px solid #f5f5f5;
+      padding: 0.28rem 0rem;
+      border-bottom: 0.01rem solid #f5f5f5;
       p:nth-child(1) {
-        font-size: 26px;
+        font-size: 0.26rem;
       }
       p:nth-child(2) {
-        font-size: 22px;
+        font-size: 0.22rem;
         color: #999;
         display: flex;
         justify-content: space-between;
-        padding-top: 15px;
+        padding-top: 0.15rem;
 
         span:nth-child(2) {
           color: #f9a52c;

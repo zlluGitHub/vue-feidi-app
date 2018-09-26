@@ -17,34 +17,34 @@
 <style lang="scss" scoped>
 .masContent {
   color: #666;
-  font-size: 20px;
-  margin-bottom: 20px;
+  font-size: 0.2rem;
+  margin-bottom: 0.2rem;
   .inner {
-    padding: 20px;
+    padding: 0.2rem;
     h3 {
-      margin-top: 30px;
-      font-size: 25px;
+      margin-top: 0.3rem;
+      font-size: 0.25rem;
       font-weight: 600;
       color: #666;
-      padding-left: 15px;
-      border-left: 2px solid #35d4a0;
+      padding-left: 0.15rem;
+      border-left: 0.02rem solid #35d4a0;
     }
     img {
       width: 100%;
     }
     ul {
-      padding-left: 12px;
+      padding-left: 0.12rem;
       li {
         position: relative;
-        padding: 12px;
+        padding: 0.12rem;
         i {
           position: absolute;
-          top: 20px;
-          left: -14px;
-          width: 10px;
-          height: 10px;
+          top: 0.2rem;
+          left: -0.14rem;
+          width: 0.1rem;
+          height: 0.1rem;
           background-color: #35d4a0;
-          border-radius: 100px;
+          border-radius: 1rem;
         }
       }
     }

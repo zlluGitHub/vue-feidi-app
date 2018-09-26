@@ -8,7 +8,7 @@
 import Details from "./Details";
 import HeadeBlack from "./HeadeBlack";
 export default {
-  name: "order",
+  name: "details",
   components: {
     Details,
     HeadeBlack

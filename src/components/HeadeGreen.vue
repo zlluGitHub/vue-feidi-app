@@ -20,28 +20,29 @@ export default {
 <style lang="scss" scoped>
 .black-top {
   position: relative;
-  padding: 10px;
-  padding-top: 20px;
+  padding: 0.1rem;
+  padding-top: 0.2rem;
   background-color: #35d4a0;
   h1 {
     color: #fff;
     text-align: center;
+    font-size: 0.28rem;
   }
   .back {
     position: absolute;
-    left: 25px;
-    top: 50px;
-    width: 30px;
-    height: 30px;
+    left: 0.25rem;
+    top: 0.5rem;
+    width: 0.3rem;
+    height: 0.3rem;
     background: url("../../images/jian_03.jpg") center center no-repeat;
     background-size: contain;
   }
   .navList {
     position: absolute;
-    top: 50px;
-    right: 25px;
-    width: 35px;
-    height: 23px;
+    top: 0.5rem;
+    right: 0.25rem;
+    width: 0.35rem;
+    height: 0.23rem;
     background: url("../../images/nav_03.jpg") center center no-repeat;
     background-size: contain;
   }

@@ -33,13 +33,13 @@
 </template>
 <style lang="scss" scoped>
 .follow-box {
-  font-size: 25px;
+  font-size: 0.25rem;
   .number,
   .forecast {
-    padding: 20px;
+    padding: 0.2rem;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #f5f5f5;
+    border-bottom: 0.01rem solid #f5f5f5;
     background-color: #fff;
     span:nth-child(1) {
       font-weight: 600;
@@ -49,33 +49,33 @@
     border-bottom: none;
   }
   > ul {
-    padding: 20px;
-    padding-top: 0px;
-    margin-top: 20px;
-    font-size: 24px;
+    padding: 0.2rem;
+    padding-top: 0rem;
+    margin-top: 0.2rem;
+    font-size: 0.24rem;
     background-color: #fff;
     li {
       position: relative;
-      padding-left: 120px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #f5f5f5;
+      padding-left: 1.2rem;
+      padding-top: 0.2rem;
+      padding-bottom: 0.2rem;
+      border-bottom: 0.01rem solid #f5f5f5;
       p {
-        padding: 5px;
+        padding: 0.05rem;
       }
       p:nth-child(2) {
-        font-size: 20px;
+        font-size: 0.2rem;
         color: #9f9f9f;
       }
       span {
         position: absolute;
-        top: 40px;
-        left: 40px;
-        padding: 3px;
-        border-radius: 5px;
+        top: 0.4rem;
+        left: 0.4rem;
+        padding: 0.03rem;
+        border-radius: 0.05rem;
         background-color: #35d4a0;
         color: #fff;
-        font-size: 20px;
+        font-size: 0.2rem;
       }
     }
   }

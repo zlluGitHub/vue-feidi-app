@@ -106,37 +106,39 @@
     ul {
       li {
         .inner {
-          padding: 0 20px;
+          padding: 0 0.2rem;
           background-color: #fff;
-          margin-top: 20px;
+          margin-top: 0.2rem;
           > p {
             display: flex;
             justify-content: space-between;
-            padding: 20px 0;
-            font-size: 26px;
+            padding: 0.2rem 0;
+            font-size: 0.26rem;
             span:nth-child(2) {
               color: #fdaa40;
             }
           }
           > div:nth-child(2) {
-            padding: 20px;
-            border-top: 1px solid #f5f5f5;
-            border-bottom: 1px solid #f5f5f5;
+            padding: 0.2rem;
+            border-top: 0.01rem solid #f5f5f5;
+            border-bottom: 0.01rem solid #f5f5f5;
             display: flex;
             a img {
-              width: 120px;
-              border: 1px solid #999;
+              width: 1.2rem;
+              border: 0.01rem solid #999;
             }
             > div {
-              width: 480px;
-              margin-left: 20px;
-              > p:nth-child(1) a {
-                font-size: 24px;
-                color: #404040;
+              width: 4.8rem;
+              margin-left: 0.2rem;
+              > p:nth-child(1) {
+                font-size: 0.21rem;
+                a {
+                  color: #404040;
+                }
               }
               > p:nth-child(2) {
-                font-size: 18px;
-                margin: 16px 0;
+                font-size: 0.18rem;
+                margin: 0.16rem 0;
                 color: #999;
               }
               > div {
@@ -146,12 +148,12 @@
                   text-align: center;
                   display: flex;
                   align-items: center;
-                  font-size: 26px;
+                  font-size: 0.26rem;
                   button {
-                    width: 38px;
-                    border: 1px solid #999;
+                    width: 0.38rem;
+                    border: 0.01rem solid #999;
                     background-color: #fff;
-                    font-size: 26px;
+                    font-size: 0.26rem;
                   }
                   button:nth-child(1) {
                     border-right: none;
@@ -161,37 +163,37 @@
                   }
                   input {
                     text-align: center;
-                    width: 50px;
-                    height: 35px;
-                    border: 1px solid #999;
+                    width: 0.5rem;
+                    height: 0.35rem;
+                    border: 0.01rem solid #999;
                   }
                 }
                 > span {
-                  font-size: 26px;
+                  font-size: 0.26rem;
                   color: #fdaa40;
                 }
               }
             }
           }
           > div:nth-child(3) {
-            padding: 18px;
+            padding: 0.18rem;
             display: flex;
             justify-content: flex-end;
-            margin-bottom: 20px;
+            margin-bottom: 0.2rem;
             a {
-              padding: 10px 15px;
-              margin-right: 16px;
-              font-size: 20px;
-              border-radius: 8px;
-              border: 2px solid #9e9e9e;
+              padding: 0.08rem 0.13rem;
+              margin-right: 0.16rem;
+              font-size: 0.15rem;
+              border-radius: 0.08rem;
+              border: 0.02rem solid #9e9e9e;
               color: #666;
             }
             a.active {
               color: #fdaa40;
-              border: 2px solid #fdaa40;
+              border: 0.02rem solid #fdaa40;
             }
             a:nth-child(4) {
-              margin-right: 0px;
+              margin-right: 0rem;
             }
           }
         }

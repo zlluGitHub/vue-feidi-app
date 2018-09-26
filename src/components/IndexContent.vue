@@ -46,7 +46,7 @@
              <span>查看更多</span>
           </li>
         </ul>
-        <div class="more">查看更多</div>
+        <div class="more"><router-link to="/news" title="查看更多">查看更多</router-link></div>
       </div>
     </div>
     </div>
@@ -68,51 +68,54 @@ export default {
   img {
     width: 100%;
   }
-
   .more {
-    font-size: 24px;
-    text-align: center;
-    padding: 18px 0px;
+    a {
+      display: block;
+      color: #666;
+      font-size: 0.24rem;
+      text-align: center;
+      padding: 0.18rem 0rem;
+    }
   }
   h2 {
-    margin: 0px;
-    font-size: 26px;
+    margin: 0rem;
+    font-size: 0.26rem;
     font-weight: 800;
-    padding: 16px 18px;
-    border: 1px solid #f5f5f5;
+    padding: 0.16rem 0.18rem;
+    border: 0.01rem solid #f5f5f5;
     background-color: #fff;
-    margin-top: 20px;
+    margin-top: 0.2rem;
   }
   .product {
     background-color: #fff;
-    margin-top: 10px;
+    margin-top: 0.1rem;
 
     .product-content {
       display: flex;
-      padding: 20px;
+      padding: 0.2rem;
       .product-left {
-        padding: 0px 80px;
+        padding: 0rem 0.8rem;
         img {
-          width: 25px;
+          width: 0.25rem;
         }
       }
       .product-right {
-        font-size: 28px;
+        font-size: 0.28rem;
         color: #fc8e00;
-        padding-top: 20px;
+        padding-top: 0.2rem;
         p:nth-child(1) {
           color: #666666;
-          font-size: 24px;
-          margin-bottom: 20px;
+          font-size: 0.24rem;
+          margin-bottom: 0.2rem;
         }
         p:nth-child(3) {
-          font-size: 24px;
-          margin-top: 50px;
+          font-size: 0.24rem;
+          margin-top: 0.5rem;
           span {
-            border: 1px solid #fc8e00;
-            border-radius: 8px;
-            padding: 12px 18px;
-            margin-right: 20px;
+            border: 0.01rem solid #fc8e00;
+            border-radius: 0.08rem;
+            padding: 0.12rem 0.18rem;
+            margin-right: 0.2rem;
           }
           span.active {
             background-color: #fc8e00;
@@ -125,26 +128,26 @@ export default {
   .new-list {
     background-color: #fff;
     ul {
-      padding: 0px 20px;
+      padding: 0rem 0.2rem;
       li {
         position: relative;
         display: flex;
-        margin-bottom: 28px;
+        margin-bottom: 0.28rem;
         img {
-          width: 200px;
+          width: 2rem;
         }
         p {
-          font-size: 20px;
+          font-size: 0.2rem;
           color: #666666;
-          line-height: 35px;
-          padding: 0 20px;
+          line-height: 0.35rem;
+          padding: 0 0.2rem;
         }
         span {
           position: absolute;
-          right: 25px;
+          right: 0.25rem;
           bottom: 0;
           color: #fc8e00;
-          font-size: 18px;
+          font-size: 0.18rem;
         }
       }
     }
