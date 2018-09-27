@@ -12,7 +12,10 @@ import SynopsisMain from '../components/SynopsisMain'
 import BusinessMain from '../components/BusinessMain'
 import HotNewMain from '../components/HotNewMain'
 import DatumMain from '../components/DatumMain'
+import Login from '../components/Login'
 import LoginMain from '../components/LoginMain'
+import LoginRegister from '../components/LoginRegister'
+import LoginPhone from '../components/LoginPhone'
 
 Vue.use(VueRouter)
 const routes = [
@@ -40,7 +43,14 @@ const routes = [
   { path: '/business', component: BusinessMain },
   { path: '/news', component: HotNewMain },
   { path: '/datum', component: DatumMain },
-  { path: '/login', component: LoginMain }
+  {
+    path: '/login', component: LoginMain,
+    children: [
+      { path: '/', component: Login },
+      { path: '/register', component: LoginRegister },
+      { path: '/phone', component: LoginPhone }
+    ]
+  }
 ]
 const router = new VueRouter({
   routes,

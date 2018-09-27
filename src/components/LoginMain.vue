@@ -1,16 +1,14 @@
 <template>
-    <div>
+    <div class="login-box">
          <HeadeGreen :title="'登录'"/>
-         <Login/>
+         <router-view></router-view>
     </div>
 </template>
 <script>
 import HeadeGreen from "./HeadeGreen";
-import Login from "./Login";
 export default {
   name: "login",
   components: {
-    Login,
     HeadeGreen
   }
 };

@@ -2,7 +2,7 @@
   <div class="black-top">
       <h1>{{title}}</h1>
       <div class="back" @click="back"></div>
-      <div class="navList"></div>
+      <div class="navList"><router-link to="/register" title="注册">注册</router-link></div>
   </div>
 </template>
 <script>
@@ -43,8 +43,19 @@ export default {
     right: 0.25rem;
     width: 0.35rem;
     height: 0.23rem;
-    background: url("../../images/nav_03.jpg") center center no-repeat;
+    // background: url("../../images/nav_03.jpg") center center no-repeat;
     background-size: contain;
+  }
+  .navList {
+    a {
+      position: absolute;
+      font-size: 0.24rem;
+      display: block;
+      top: -0.06rem;
+      right: -0rem;
+      width: 0.5rem;
+      color: #fff;
+    }
   }
 }
 </style>

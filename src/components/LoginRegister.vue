@@ -5,22 +5,30 @@
             <div class="input">
                 <div class="user">
                     <label for="suer"></label>
-                    <input name="user" placeholder="手机号/用户名" type="text">
+                    <input name="user" placeholder="手机号码/用户名" type="text">
+                </div>
+                <div class="identify-code">
+                    <label for="code"> </label>
+                    <input name="code" placeholder="请输入验证码" type="text">
+                    <span>获取验证码</span>
                 </div>
                 <div class="password">
                     <label for="password"> </label>
-                    <input name="password" placeholder="密码" type="text">
+                    <input name="password" placeholder="请输入密码（6-16位、区分大小写）" type="text">
                 </div>
             </div>
-            <div class="submit"> 登 &emsp;录</div>
+            <div class="submit"> 注 &emsp;册</div>
+            
             <div class="other">
-                <router-link to="/phone" title="手机快捷登陆">手机快捷登陆</router-link>
-                <span>忘记密码</span>
+                <p>用已有账号登录</p>
             </div>
             
         </div>
         <div class="login-bottom">
-           <p> 其他登录方式：</p><span></span>
+          <p>
+            <input type="checkbox">
+            <span>同意并愿意遵守《郎恒安服务条协议》</span>
+          </p>
         </div>
     </div>
 </template>
@@ -61,11 +69,29 @@
           background-size: contain;
         }
       }
+      .identify-code {
+        position: relative;
+        margin: 0.3rem 0rem;
+        label {
+          top: 0.2rem;
+          background: url("../../images/anquan_03.jpg") center center no-repeat;
+          background-size: contain;
+        }
+        span {
+          position: absolute;
+          top: 0rem;
+          right: 0rem;
+          padding: 0.18rem 0.5rem;
+          display: block;
+          border-radius: 0.3rem;
+          background-color: #d6d6d6;
+          color: #fff;
+        }
+      }
       .password {
         position: relative;
-        padding-top: 0.2rem;
         label {
-          top: 0.38rem;
+          top: 0.18rem;
           background: url("../../images/suo_09.jpg") center center no-repeat;
           background-size: contain;
         }
@@ -82,25 +108,24 @@
     text-align: center;
   }
   .other {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.2rem 0.2rem;
-    a {
-      color: #e6e6e6;
+    p {
+      padding: 0.2rem;
+      text-align: right;
     }
   }
   .login-bottom {
-    padding: 0.2rem 0.6rem;
-    display: flex;
-    align-items: center;
-    margin-bottom: 3rem;
-    span {
-      display: inline-block;
-      margin-left: 0.12rem;
-      width: 0.5rem;
-      height: 0.5rem;
-      background: url("../../images/weixin_12.jpg") center center no-repeat;
-      background-size: contain;
+    padding: 1.2rem 0.6rem;
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      input {
+        width: 0.2rem;
+        height: 0.2rem;
+        border: 1rem solid #f5f5f5;
+        background-color: #fff;
+        margin-right: 0.1rem;
+      }
     }
   }
 }
