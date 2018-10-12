@@ -14,13 +14,13 @@
            </router-link>
           </li>
           <li>
-            <router-link to="/order">
+            <router-link to="/synopsis">
               <img src="../../images/index_34.gif" alt="肺笛"> 
               <span>肺笛</span> 
             </router-link>
           </li>
           <li>
-            <router-link to="/order">
+            <router-link to="/agent">
               <img src="../../images/index_36.jpg" alt="关于我们"> 
               <span>关于我们</span>
             </router-link>

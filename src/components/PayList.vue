@@ -4,7 +4,7 @@
             <ul>
                <li>
                     <div class="inner">
-                        <p><span>2017.11.09</span><span>待收货</span></p>
+                        <p><span>2017.11.09</span><span>待付款</span></p>
                         <div>
                             <router-link to="/details">
                                 <img src="../../images/didan_03.jpg" alt="商品图">
@@ -25,11 +25,8 @@
                             </div>
                         </div>
                         <div>
-                            <router-link to="/">申请退款</router-link>
-                            <router-link to="/">再次购买</router-link>
-                            <router-link to="/follow">查看物流</router-link>
-                            <router-link class="active" to="/">确认收货</router-link>
-                            
+                            <router-link to="/">取消订单</router-link>
+                            <router-link class="active" to="/">去支付</router-link>
                         </div>
                     </div>
                 </li>
@@ -56,15 +53,14 @@
                             </div>
                         </div>
                         <div>
-                            <router-link to="/follow">取消订单</router-link>
-                            <router-link class="active" to="/">去付款</router-link>
-                            
+                            <router-link to="/">取消订单</router-link>
+                            <router-link class="active" to="/">去支付</router-link>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="inner">
-                        <p><span>2017.11.09</span><span>已完成</span></p>
+                        <p><span>2017.11.09</span><span>待付款</span></p>
                         <div>
                             <router-link to="/details">
                                 <img src="../../images/didan_03.jpg" alt="商品图">
@@ -85,15 +81,14 @@
                             </div>
                         </div>
                         <div>
-                            <router-link to="/">申请退款</router-link>
-                            <router-link class="active" to="/">再次购买</router-link>
-                            
+                            <router-link to="/">取消订单</router-link>
+                            <router-link class="active" to="/">去支付</router-link>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="inner">
-                        <p><span>2017.11.09</span><span>待发货</span></p>
+                        <p><span>2017.11.09</span><span>待付款</span></p>
                         <div>
                             <router-link to="/details">
                                 <img src="../../images/didan_03.jpg" alt="商品图">
@@ -114,10 +109,8 @@
                             </div>
                         </div>
                         <div>
-                            <router-link to="/">申请退款</router-link>
-                            <router-link to="/">提醒发货</router-link>
-                            <router-link class="active" to="/">再次购买</router-link>
-                            
+                            <router-link to="/">取消订单</router-link>
+                            <router-link class="active" to="/">去支付</router-link>
                         </div>
                     </div>
                 </li>

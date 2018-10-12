@@ -2,7 +2,7 @@
   <div class="black-top">
       <h1>{{title}}</h1>
       <div class="back" @click="back"></div>
-      <div class="navList"><router-link to="/register" title="注册">注册</router-link></div>
+      <div class="navList"><router-link to="/login" title="登录">登录</router-link></div>
   </div>
 </template>
 <script>
@@ -31,7 +31,7 @@ export default {
   .back {
     position: absolute;
     left: 0.25rem;
-    top: 0.5rem;
+    top: 0.38rem;
     width: 0.3rem;
     height: 0.3rem;
     background: url("../../images/jian_03.jpg") center center no-repeat;
@@ -43,8 +43,6 @@ export default {
     right: 0.25rem;
     width: 0.35rem;
     height: 0.23rem;
-    // background: url("../../images/nav_03.jpg") center center no-repeat;
-    background-size: contain;
   }
   .navList {
     a {

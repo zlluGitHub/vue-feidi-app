@@ -5,14 +5,14 @@
             <div class="input">
                 <div class="user">
                     <label for="suer"></label>
-                    <input name="user" placeholder="手机号/用户名" type="text">
+                    <input name="user" v-model="phone" placeholder="手机号/用户名">
                 </div>
                 <div class="password">
                     <label for="password"> </label>
-                    <input name="password" placeholder="密码" type="text">
+                    <input name="password" v-model="possword" placeholder="密码">
                 </div>
             </div>
-            <div class="submit"> 登 &emsp;录</div>
+            <div class="submit" @click="submit"> 登 &emsp;录</div>
             <div class="other">
                 <router-link to="/phone" title="手机快捷登陆">手机快捷登陆</router-link>
                 <span>忘记密码</span>
@@ -24,6 +24,33 @@
         </div>
     </div>
 </template>
+<script>
+import { MessageBox } from 'mint-ui';
+export default {
+  name:'login',
+  data: () => ({
+           phone:'',
+           possword:''
+  }),
+  methods: {
+      submit() {
+          if(this.possword!=''&&this.phone!=''){
+            MessageBox({
+              title: '温馨提示',
+              message: '数据拉取失败，请稍后再试。。。'
+            });
+          }else{
+             MessageBox({
+              title: '温馨提示',
+              message: '请正确填写用户名或密码！'
+            });
+          }
+      }
+  }
+  
+}
+</script>
+
 <style lang="scss" scoped>
 .login {
   background-color: #fff;

@@ -13,7 +13,7 @@
           <div class="product-right">
             <p>美国lung flute 正品 “肺笛” 正式进入中国</p>
             <p>￥2880.00</p>
-            <p><span>加入购物车</span><span>立即购买</span></p>
+            <p><span @click="add">加入购物车</span><span @click="buy">立即购买</span></p>
           </div>
         </div>
       </div>
@@ -23,30 +23,32 @@
           <li>
              <img src="../../images/index_27.gif" alt="icon">
              <p>北京郎恒安生物科技有限公司核心团队有多名海外学者昨中国...</p>
-             <span>查看更多</span>
+             <span><router-link to="/news" title="查看更多">查看更多</router-link></span>
           </li>
           <li>
              <img src="../../images/index_27.gif" alt="icon">
              <p>北京郎恒安生物科技有限公司核心团队有多名海外学者昨中国...</p>
-             <span>查看更多</span>
+             <span><router-link to="/news" title="查看更多">查看更多</router-link></span>
           </li>
           <li>
              <img src="../../images/index_27.gif" alt="icon">
              <p>北京郎恒安生物科技有限公司核心团队有多名海外学者昨中国...</p>
-             <span>查看更多</span>
+             <span><router-link to="/news" title="查看更多">查看更多</router-link></span>
           </li>
           <li>
              <img src="../../images/index_27.gif" alt="icon">
              <p>北京郎恒安生物科技有限公司核心团队有多名海外学者昨中国...</p>
-             <span>查看更多</span>
+             <span><router-link to="/news" title="查看更多">查看更多</router-link></span>
           </li>
           <li>
              <img src="../../images/index_27.gif" alt="icon">
              <p>北京郎恒安生物科技有限公司核心团队有多名海外学者昨中国...</p>
-             <span>查看更多</span>
+             <span><router-link to="/news" title="查看更多">查看更多</router-link></span>
           </li>
         </ul>
-        <div class="more"><router-link to="/news" title="查看更多">查看更多</router-link></div>
+        <div class="more">
+          <router-link to="/news" title="查看更多">查看更多</router-link>
+        </div>
       </div>
     </div>
     </div>
@@ -54,11 +56,26 @@
 <script>
 import HeadeBlack from "./HeadeBlack";
 import NavTop from "./NavTop";
+import { MessageBox } from 'mint-ui';
 export default {
   name: "navtop",
   components: {
     NavTop,
     HeadeBlack
+  },
+  methods: {
+      add() {
+          MessageBox({
+            title: '温馨提示',
+            message: '已成功加入购物车'
+          });
+      },
+      buy() {
+          MessageBox({
+            title: '温馨提示',
+            message: '数据拉取失败，请稍后再试。。。'
+          });
+      }
   }
 };
 </script>
@@ -142,7 +159,7 @@ export default {
           line-height: 0.35rem;
           padding: 0 0.2rem;
         }
-        span {
+        span a{
           position: absolute;
           right: 0.25rem;
           bottom: 0;

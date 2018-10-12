@@ -47,7 +47,7 @@
                 <i>*</i>
             </li>
             <li>
-                <button>提交信息</button>
+                <button @click="submit">提交信息</button>
             </li>
         </ul>
         <h3>联系我们：</h3>
@@ -70,6 +70,22 @@
         </ul>
     </div>
 </template>
+<script>
+import { MessageBox } from 'mint-ui';
+export default {
+    methods: {
+      submit() {
+
+             MessageBox({
+              title: '温馨提示',
+              message: '请正确填写信息！'
+            });
+          
+      }
+  }
+}
+</script>
+
 <style lang="scss" scoped>
 .business {
   color: #666;
@@ -121,6 +137,7 @@
         background-color: #fc9c20;
         border-radius: 0.05rem;
         border: none;
+        font-size: 0.20rem;
         padding: 0.08rem 0.17rem;
         color: #fff;
       }

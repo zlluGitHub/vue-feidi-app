@@ -3,7 +3,7 @@
         <ul>
             <li><router-link to="/">首页</router-link></li>
             <li><router-link to="/synopsis">肺笛简介</router-link></li>
-            <li><router-link to="/datum">关于我们</router-link></li>
+            <li><router-link to="/agent">关于我们</router-link></li>
             <li><router-link to="/business">招商引资</router-link></li>
         </ul>
     </div>

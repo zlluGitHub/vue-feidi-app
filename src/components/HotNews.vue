@@ -1,31 +1,46 @@
 <template>
     <div class="hotNews">
         <ul>
-            <li>
+            <li @click="news">
                 <p>北京郎恒安生物科技有限公司核心团队由多名海外学者昨中国...</p>
                 <p><span>2017-12-23 09：23</span><span>查看更多</span> </p>
             </li>
-            <li>
+            <li @click="news">
                 <p>公司下设研发部、项目部、信息部...</p>
                 <p><span>2017-12-23 09：23</span><span>查看更多</span> </p>
             </li>
-            <li>
+            <li @click="news">
                 <p>恒安将依靠先进的基因组学研究和分子检测技术，生物信息学技术...</p>
                 <p><span>2017-12-23 09：23</span><span>查看更多</span> </p>
             </li>
-            <li>
+            <li @click="news">
                 <p>恒安团队正与被禁大学人民医、首都医科大学...</p>
                 <p><span>2017-12-23 09：23</span><span>查看更多</span> </p>
             </li>
            
-            <li>
+            <li @click="news">
                 <p>北京郎恒安生物科技有限公司核心团队由多名海外学者昨中国...</p>
                 <p><span>2017-12-23 09：23</span><span>查看更多</span> </p>
             </li>
         </ul>
-        <div class="more">查看更多</div>
+        <div @click="news" class="more">查看更多</div>
     </div>
 </template>
+<script>
+import { MessageBox } from 'mint-ui';
+export default {
+    name: "new",
+    methods: {
+        news() {
+            MessageBox({
+                title: '温馨提示',
+                message: '数据拉取失败，请稍后再试。。。'
+            });
+        }
+    }
+}
+</script>
+
 <style lang="scss" scoped>
 .hotNews {
   background-color: #fff;
