@@ -151,7 +151,8 @@ export default {
         display: flex;
         margin-bottom: 0.28rem;
         img {
-          width: 2rem;
+          width: 3rem;
+          height: 2rem;
         }
         p {
           font-size: 0.2rem;

@@ -16,9 +16,9 @@
                                 <p>购买类型：肺笛单品</p>
                                 <div>
                                     <p>
-                                        <button disabled="disabled">-</button>
+                                        <button @click="delivery()">-</button>
                                         <input type="text" value="1">
-                                        <button disabled="disabled">+</button>
+                                        <button @click="delivery()">+</button>
                                     </p>
                                     <span>￥2888.00</span>
                                 </div>
@@ -47,9 +47,9 @@
                                 <p>购买类型：肺笛单品</p>
                                 <div>
                                     <p>
-                                        <button disabled="disabled">-</button>
+                                        <button @click="delivery()">-</button>
                                         <input type="text" value="1">
-                                        <button disabled="disabled">+</button>
+                                        <button @click="delivery()">+</button>
                                     </p>
                                     <span>￥2888.00</span>
                                 </div>
@@ -76,9 +76,9 @@
                                 <p>购买类型：肺笛单品</p>
                                 <div>
                                     <p>
-                                        <button disabled="disabled">-</button>
+                                        <button @click="delivery()">-</button>
                                         <input type="text" value="1">
-                                        <button disabled="disabled">+</button>
+                                        <button @click="delivery()">+</button>
                                     </p>
                                     <span>￥2888.00</span>
                                 </div>
@@ -105,9 +105,9 @@
                                 <p>购买类型：肺笛单品</p>
                                 <div>
                                     <p>
-                                        <button disabled="disabled">-</button>
+                                        <button @click="delivery()">-</button>
                                         <input type="text" value="1">
-                                        <button disabled="disabled">+</button>
+                                        <button @click="delivery()">+</button>
                                     </p>
                                     <span>￥2888.00</span>
                                 </div>
@@ -126,6 +126,22 @@
         </div>
     </div>
 </template>
+<script>
+import { MessageBox } from 'mint-ui';
+export default {
+    data:()=>({
+      value:'1'
+    }),
+    methods:{
+        delivery(){
+            MessageBox({
+                title: '温馨提示',
+                message: '数据拉取失败请稍后再试。。。'
+            });
+        }
+    }
+}
+</script>
 <style lang="scss" scoped>
 .order-top {
   .receiveNoteList {
